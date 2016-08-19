@@ -1,3 +1,3 @@
-# CareerFoundry 1.9 - Responsive Website
+# CareerFoundry 1.10 - Single Page Scrolling Website
 
-CareerFoundry 1.9 - Responsive Website
+CareerFoundry 1.10 - Single Page Scrolling Website
