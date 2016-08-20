@@ -35,9 +35,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="projectName">
+          <div class="projectName navbar-brand">
             <a href="#">Randy Savage</a>
           </div> <!-- end class projectName -->
+        </div> <!-- end class navbar-header -->
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Home</a></li>
@@ -47,10 +48,10 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-        </div> <!-- end class navbar-header -->
       </div> <!-- end class container-fluid -->
     </div> <!-- end class navbar -->
 
+<!-- home -->
     <div class="container-fluid" id="index">
       <div id="mycarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -124,10 +125,11 @@
 
 <!-- portfolio -->
 
-    <div class="container-fluid" id="portfolio">
+    <div class="container-fluid anchor" id="portfolio">
 
       <div class="work-meta">
 
+      <h1>Portfolio</h1>
         <div class="row row-grid" id="work">
 
           <div class="col-md-3 col-xs-6" id="proj-1">
@@ -170,7 +172,7 @@
 
 <!-- about -->
 
-    <div class="container-fluid" id="about">
+    <div class="container-fluid anchor" id="about">
         <div class="work-meta" id="about">
         <h1>About</h1>
 
@@ -218,7 +220,7 @@
 
 <!-- faq -->
 
-    <div class="container-fluid" id="faq">
+    <div class="container-fluid anchor" id="faq">
       <div class="main">
         <div class="faq">
             <h1>Frequently Asked Questions</h1>
@@ -308,7 +310,7 @@
     </div> <!-- end class container-fluid id faq -->
 
 <!-- contact -->
-    <div class="container-fluid" id="contact">
+    <div class="container-fluid anchor" id="contact">
 
       <div class="main">
       <!-- <div class="old_container"> can't use it now -->
@@ -394,6 +396,18 @@
     <!-- Bootstrap core JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Can place script tags with JavaScript files here -->
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+          return false;
+        });
+    </script>
 
   </body>
 

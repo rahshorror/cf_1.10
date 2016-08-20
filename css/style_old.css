@@ -1,7 +1,4 @@
 /**** index.html ****/
-
-/* no longer used */
-/*
 .jumbotron {
     background-image: url("../img/enemy-landscape.png");
     background-size: cover;
@@ -9,23 +6,22 @@
 
 .jumbotron p {
       color: red;
-} 
+}
 
 .col-md-3 a {
     color: red;
-} 
-*/
+}
 
 /**** contact.html ****/
 
 * {
     box-sizing: border-box;
-    /* border: 0.0625em solid red; */
+    /* border: 1px solid red; */
 }
 
 body {
     background-color: lightgray;
-    padding-top: 3.125em;
+    padding-top: 50px;
     position: relative; /* added for 1.10 */
 }
 
@@ -35,7 +31,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 1.25em 0.625em 1.25em;
+    padding: 20px 10px 20px;
     z-index: 1;
 }
 
@@ -45,8 +41,8 @@ body {
 
 .nav ul li {
     display: inline-block;
-    margin: 0 0.625em;
-    width: 6.25em;
+    margin: 0 10px;
+    width: 100px;
     text-align: center;
 } 
 
@@ -56,65 +52,59 @@ body {
 }
 
 #navhead li {
-    width: 15.625em;
+    width: 250px;
     text-align: left;
 }
 */
 
-/* dont think this one works right 
-.nav ul li a {
+/*
+.navbar ul li a {
     color: white;
     transition: color 2s;
     -webkit-transition: color 2s; /* Safari */
-   /* text-decoration: none;
-} */
+/*    text-decoration: none;
+}
 
-.nav > li > a:hover {
-    color: rebeccapurple !important;
-    transition: color 2s;
-    -webkit-transition:  color 2s; /* Safari */
+.navbar a:hover {
+    color: rebeccapurple;
     text-decoration: none;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: bold; 
-} 
+} */
 
 #mycarousel {
-    padding-top: 1.25em;
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
+    padding-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 /* https://coderwall.com/p/0jezca/vertical-spacing-for-bootstrap-columns */
 /* .row.row-grid [class*="col-"] + [class*="col-"] {
-    margin-top: 0.625em;
+    margin-top: 10px;
 }
 
-@media (min-width: 75em) {
+@media (min-width: 1200px) {
     .row.row-grid [class*="col-lg-"] + [class*="col-lg-"] {
         margin-top: 0;
     }
 }
-@media (min-width: 62em) {
+@media (min-width: 992px) {
     .row.row-grid [class*="col-md-"] + [class*="col-md-"] {
         margin-top: 0;
     }
 }
-@media (min-width: 48em) {
+@media (min-width: 768px) {
     .row.row-grid [class*="col-sm-"] + [class*="col-sm-"] {
         margin-top: 0;
     }
 }
 
 .row-grid + .row-grid {
-    margin-top: 0.625em;
+    margin-top: 10px;
 } */
 
-.anchor {
-  padding-top: 50px;
-}
-
 [class*="col-"] {
-    margin-bottom: 0.9375em;
+    margin-bottom: 15px;
 }
 
 .work-meta {
@@ -122,7 +112,7 @@ body {
 }
 
 #work {
-    padding-top: 4.6875em;
+    padding-top: 75px;
 }
 
 .work-meta img {
@@ -138,23 +128,23 @@ body {
 }
 
 .item {
-    height: 37.5em;
+    height: 600px;
 }
 
 .carousel-caption {
     float: left;
     position: absolute;
-    padding-bottom: 28.125em;
+    padding-bottom: 450px;
     z-index: 0;
 }
 
 .objects {
-    padding-top: 1.25em;
+    padding-top: 20px;
 }
 
 /* using bootstrap container div */ 
 .old_container {
-    /* background-color: lightgray; */
+	/* background-color: lightgray; */
     /* padding-top: 1%;
     padding-bottom: 5%; */
     width: 100%;
@@ -162,9 +152,9 @@ body {
 
 .border {
     width: 60%;
-    min-width: 25em;
-    max-width: 45em;
-    border: 0.1875em solid black;
+    min-width: 400px;
+    max-width: 720px;
+    border: 3px solid black;
     margin: 10% auto;
     position: relative;
     background-color: white;
@@ -173,7 +163,7 @@ body {
     top: 20%;
     left: 30%; 
     */
-    padding: 1.25em;
+    padding: 20px;
     overflow: hidden;
 }
 
@@ -181,8 +171,8 @@ body {
     width: 60%;
     height: 60%;
     float: left;
-    padding-left: 1.5625em;
-    padding-right: 3.125em;
+    padding-left: 25px;
+    padding-right: 50px;
 }
 
 .right_col {
@@ -197,8 +187,8 @@ body {
 }
 
 .glyphicon {
-    color: mediumpurple;
-    margin-right: 0.3125em;
+	color: mediumpurple;
+	margin-right: 5px;
 }
 
 .emailaddr a:link {
@@ -224,16 +214,16 @@ body {
     position: relative;
     /* float: left; */
     /* max-inline-size: 10%; */
-    height: 1.625em;
-    width: 1.625em;
-    margin-left: 0.0625em;
-    margin-right: 0.625em;
-    margin-bottom: 0.3125em;
+    height: 26px;
+	width: 26px;
+	margin-left: 1px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    -ms-transition: all ease 0.3s;
-    transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
     background-size: cover;
 }
 
@@ -242,8 +232,8 @@ body {
 }
 
 .fb:hover {
-    background-position: 0em -1.625em;
-    box-shadow: 0em 0em 0.25em 0.0625em rgba(0,0,0,0.8);
+    background-position: 0px -26px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }
 
 .inst {
@@ -251,8 +241,8 @@ body {
 }
 
 .inst:hover {
-    background-position: 0em -1.625em;
-    box-shadow: 0em 0em 0.25em 0.0625em rgba(0,0,0,0.8);
+    background-position: 0px -26px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }
 
 .tw {
@@ -260,14 +250,14 @@ body {
 }
 
 .tw:hover {
-    background-position: 0em -1.625em;
-    box-shadow: 0em 0em 0.25em 0.0625em rgba(0,0,0,0.8);
+    background-position: 0px -26px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
 }
 
 .elbow {
     clear: both;
-    margin-top: 0.625em;
-    height: 9.375em;
+    margin-top: 10px;
+    height: 150px;
     width: 100%;
     background-size: cover;
     background-image: url("http://www.wwe.com/f/styles/wwe_large/public/video/thumb/2012/09/savage_elbow_USE.jpg");
@@ -283,7 +273,7 @@ body {
 body {
     background-color: #fffeea;
     color: #34495e;
-    padding-top: 3.125em;
+    padding-top: 50px;
 }
 
 .container {
@@ -293,8 +283,8 @@ body {
 */
 
 .header h1 {
-    margin-bottom: 3.125em;
-    margin-top: 3.125em;
+    margin-bottom: 50px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -306,17 +296,17 @@ body {
 .column {
     /* display: inline-block; */
     float: left;
-    padding: 0 1.25em;
+    padding: 0 20px;
     width: 30%;
 }
 
 .intro {
-    padding: 0em;
+    padding: 0px;
 }
 
 .main-text {
     clear: both;
-    padding-top: 3.75em
+    padding-top: 60px
 }
 
 .imgc {
@@ -324,24 +314,24 @@ body {
 }
 
 #skill-list {
-    margin-left: 3.125em;
+    margin-left: 50px;
 }
 
 .skills {
     background-color: #5ad4c2;
     color: #fff;
-    padding-top: 3.125em;
-    padding-bottom: 3.125em;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* faq.html */
 
 .faq {
-    padding-top: 0.625em;
+	padding-top: 10px;
 }
 
 .panel-group {
-    padding-top: 1.25em;
+	padding-top: 20px;
 }
 
 #headingOne,
@@ -349,31 +339,23 @@ body {
 #headingThree,
 #headingFour,
 #headingFive {
-    background-color: gray;
+	background-color: gray;
 }
 
 .panel,
 .panel-body {
-    border-style: none;
-    border-width: 0;
+	border-style: none;
+	border-width: 0;
 }
 
 .panel-default {
-    background-color: lightgray;
-    border-style: none;
-    border-width: 0;
+	background-color: lightgray;
+	border-style: none;
+	border-width: 0;
 }
 
 /* Typography */
-.navbar-brand {
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-    font-weight: 400;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 0.1em;
-}
-
-.projectName a {
+#navhead {
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 400;
     text-transform: uppercase;
@@ -417,13 +399,13 @@ body {
 }
 
 .panel-body {
-    font-family: 'Lato','Helvetica','sans-serif';
+	font-family: 'Lato','Helvetica','sans-serif';
 }
 
 .panel-title a {
-    color: rebeccapurple;
-    font-family: 'Lato','Helvetica','sans-serif';
-    font-weight: 400;
+	color: rebeccapurple;
+	font-family: 'Lato','Helvetica','sans-serif';
+	font-weight: 400;
 }
 
 .carousel-caption h3 {
